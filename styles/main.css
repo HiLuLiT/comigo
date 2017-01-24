@@ -4,32 +4,52 @@
     }
 }
 
-/*  ul a{} colors every a שבתוך ul  in black, and removes underline*!  */
-/*  or color every a : a{}  */
-
-       /*color: #111111;*/
-       /*text-decoration: none;*/
-
-
-
-/*colors every link with black*/
-a:link {color:#111111;
-    text-decoration: none;
-
-}
-
-/* colors every visited link with black (otherwise would be purple because of browser defaults) */
+a:link,
 a:visited {
     color:#111111;
+    text-decoration: none;
 }
 
 /*colors every hover over link with red and focus on it */
 a:hover,
-a:focus{
+a:focus,
+a:active {
     color: #F14848;
+    outline:none;
+}
+
+/*site footer*/
+
+.site-footer{
+    background-color: #222;
+}
+
+.site-footer a {
+    color:grey;
+}
+
+.bottom-nav > li > a {
+    color: white;
+
 }
 
 
+/*Bold +red home button*/
+a.home-nav {
+    color: #F14848;
+    font-weight: bold;
+}
 
+/*colors all buttons in grey*/
+.engaging button {
+    color: #707070;
+}
 
+/*colors hover over buttons with red*/
+button:hover {
+    color: #F14848;
+}
 
+.engaging {
+    background-color: #707070;
+}
