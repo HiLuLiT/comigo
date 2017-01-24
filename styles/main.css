@@ -1,0 +1,35 @@
+@media (max-width: 700px) {
+    .main-menu {
+        display: none;
+    }
+}
+
+/*  ul a{} colors every a שבתוך ul  in black, and removes underline*!  */
+/*  or color every a : a{}  */
+
+       /*color: #111111;*/
+       /*text-decoration: none;*/
+
+
+
+/*colors every link with black*/
+a:link {color:#111111;
+    text-decoration: none;
+
+}
+
+/* colors every visited link with black (otherwise would be purple because of browser defaults) */
+a:visited {
+    color:#111111;
+}
+
+/*colors every hover over link with red and focus on it */
+a:hover,
+a:focus{
+    color: #F14848;
+}
+
+
+
+
+
