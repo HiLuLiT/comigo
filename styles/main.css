@@ -4,6 +4,11 @@
     }
 }
 
+p {
+    background: coral url() no-repeat 50px 50px;
+}
+
+    /*=========General LoVe HAte ============*/
 a:link,
 a:visited {
     color:#111111;
@@ -18,28 +23,14 @@ a:active {
     outline:none;
 }
 
-/*site footer*/
-
-.site-footer{
-    background-color: #222;
-}
-
-.site-footer a {
-    color:grey;
-}
-
-.bottom-nav > li > a {
-    color: white;
-
-}
-
-
+/*===========home button ======================*/
 /*Bold +red home button*/
-a.home-nav {
+a.home-nav{
     color: #F14848;
     font-weight: bold;
 }
 
+/*=================engaging section MIDDLE =======================*/
 /*colors all buttons in grey*/
 .engaging button {
     color: #707070;
@@ -50,6 +41,92 @@ button:hover {
     color: #F14848;
 }
 
+/*colors section in grey*/
 .engaging {
     background-color: #707070;
+}
+
+/*===============site footer======================*/
+
+.site-footer{
+    background-color: #222;
+    color:grey;
+}
+
+.bottom-nav ul li a {
+    color: #707070;
+}
+
+.bottom-nav > li > a {
+    color: white;
+}
+
+.bottom-nav ul li a:hover {
+    color: red;
+}
+
+/*==========copyrights footer================*/
+
+.copyrights {
+    color: #707070;
+    background-color: #222222;
+}
+
+.copyrights ul li a {
+    color: #707070;
+}
+
+.copyrights a:hover {
+    color: white;
+}
+
+/*colors fatlady link*/
+.copyrights a {
+    color: #707070;
+}
+
+/*======================Intro section =================*/
+
+.intro {
+    height: 400px;
+    background-image: url( ../Media/other/homepage-featured-new-1920x745.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/*=================== blog ===================*/
+
+.blog li {
+    height: 400px;
+    width: 200px;
+    display: block;
+}
+
+.blog1 {
+    background-image: url(../Media/blog/ibc_post_EI-750x508.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+}
+
+.blog2 {
+    background-size: cover;
+    background: url(../Media/blog/IMG_9294-750x563.jpeg) no-repeat 50% 0;
+}
+
+.blog3 {
+    background-size: cover;
+    background: url(../Media/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat 50% 0;
+}
+
+.blog4 {
+    background-size: cover;
+    background: url(../Media/blog/post_tv_connect-750x508.jpeg) no-repeat 50% 0;
+}
+
+.blog5 {
+    background-size: cover;
+    background: url(../Media/blog/post_quality-750x508.jpeg) no-repeat 50% 0;
 }
