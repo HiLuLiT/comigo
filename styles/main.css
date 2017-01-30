@@ -9,20 +9,19 @@ body {
     font: 100% 'source sans pro', sans-serif;
 }
 
-/*p {*/
-    /*font-size: 1rem;*/
-/*}*/
+html {
+    box-sizing: border-box;
+}
 
-/*ul li {*/
-    /*font-size: 3rem;*/
-/*}*/
-
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 
 /*=========General LoVe HAte ============*/
 
 a:link,
 a:visited {
-    color:#111111;
+    color: #171717;
     text-decoration: none;
 }
 
@@ -31,48 +30,82 @@ a:hover,
 a:focus,
 a:active {
     color: #F14848;
-    outline:none;
+    outline: none;
 }
 
-/*===========home button ======================*/
+/*===========home button + NAV ======================*/
+
+.header {
+    line-height: 66px;
+}
+
+.logo-wrapper {
+    display: inline-block;
+    line-height: 66px;
+    padding-left: 20px;
+}
+
+.logo-wrapper img {
+    vertical-align: middle;
+}
+
 /*Bold +red home button*/
 .main-menu .home-nav {
     color: #F14848;
     font-weight: bold;
 }
 
-.main-menu ul li {
+/*sorts all <li> elements in a row*/
+.main-menu li {
     display: inline-block;
 }
 
+.main-menu ul {
+    margin: 0;
+    padding-right: 20px;
+}
+
+.main-menu li a {
+    display: inline-block;
+    line-height: 66px;
+    padding: 0 10px;
+}
+
+/*moves the menu up next to the logo - makes it behave like an inline block*/
+.main-menu {
+    float: right;
+    font-weight: 200;
+}
+
+/*hide all sub-menus*/
 .main-menu ul ul {
     display: none;
 }
+
 /*===============Intro & Why comigo sections==========================*/
 
 .intro {
-    height: 400px;
+    height: 35rem;
     background: url(../Media/other/homepage-featured-new-1920x745.jpg) no-repeat center;
     background-size: cover;
     text-align: center;
 }
 
 .intro-content {
-    padding: 90px;
+    padding: 10rem;
 }
 
 h1 {
     font-size: 1.68rem;
     color: white;
     font-weight: 300;
-    margin:0;
+    margin: 0;
 }
-
 
 .intro h2 {
     font-size: 4.05rem;
     color: white;
-    font-weight:400;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 25px;
     line-height: 4rem;
@@ -80,8 +113,9 @@ h1 {
 
 .why {
     text-align: center;
+    height: 300px;
+    padding: 20px;
 }
-
 
 .why h2 {
     font-size: 2.925rem;
@@ -95,7 +129,6 @@ h1 {
     font-weight: 100;
     font-size: 1.125rem;
 }
-
 
 /*======================== all the red buttons ============================*/
 
@@ -117,7 +150,6 @@ h1 {
     color: black;
 
 }
-
 
 /*================== enhancement & deploy section =====================*/
 
@@ -149,6 +181,7 @@ h1 {
     width: 50%;
     background-repeat: no-repeat, no-repeat;
 }
+
 .deploy h2 {
     color: black;
     font-weight: 300;
@@ -172,10 +205,9 @@ h1 {
     text-transform: uppercase;
 }
 
-
-/*=================engaging section MIDDLE =======================*/
+/*=================SERVICES section MIDDLE =======================*/
 /*colors all buttons in grey*/
-.engaging button {
+.services button {
     color: #707070;
     background-color: transparent;
     border: none;
@@ -190,60 +222,83 @@ button:hover {
 }
 
 /*colors section background in grey*/
-.engaging {
+.services {
     background-color: #36342D;
 }
 
-.engaging h2 {
-    color:white;
+.services h2 {
+    color: white;
     font-size: 2rem;
-    font-weight:300;
+    font-weight: 200;
     text-transform: uppercase;
+
 }
 
-.engaging p {
-    font-weight:100;
+.services p {
+    font-weight: 100;
     color: white;
 }
 
-.engaging figcaption {
+.services figcaption {
     color: #B8B8B5;
 }
 
+.wrap-services {
+    padding-left: 200px;
+    padding-top: 100px;
+    margin: 0;
+    width: 390px;
+}
+
+
 /*==================your-content section======================*/
 
-.your-content {
+.experience {
     background-image: url(../Media/other/screen_whos_on.jpg);
     background-size: contain;
-    background-position: right;
-    height: 450px;
+    background-position: 120%;
+    height: 600px;
     background-repeat: no-repeat;
 }
 
-.your-content h2 {
+.experience h2 {
     text-transform: uppercase;
-    font-weight:400;
-    font-size: 2rem;
+    font-weight: 300;
+    font-size: 3rem;
+    width: 200px;
+    margin-bottom: 0;
+
 }
 
-.your-content p {
+.experience p {
     font-weight: 200;
+    width: 200px;
+    margin-top: 0;
+
+}
+
+.experience-wrap {
+    padding-left: 100px;
+    padding-top: 20px;
+    margin: 0;
+    width:200px;
+    height: 400px;
 }
 
 /*================learn more section =====================*/
 
 .learn-more h2 {
     font-size: 3.375rem;
-    font-weight:100;
+    font-weight: 100;
     text-transform: uppercase;
     background-color: #F9F9F9;
     height: 200px;
-    width:400px;
+    width: 400px;
 }
 
 .brochure {
     background-color: #F14848;
-    font-weight:100;
+    font-weight: 100;
     color: white;
     height: 200px;
     width: 200px;
@@ -275,7 +330,7 @@ button:hover {
 }
 
 .social {
-    height:150px;
+    height: 150px;
     width: 150px;
     background-color: #EFEFEF;
 
@@ -287,11 +342,11 @@ button:hover {
 
 .footer-nav {
     background-color: #1E2024;
-    color:grey;
+    color: grey;
 }
 
 /*sets margin to footers content*/
-.content-center{
+.content-center {
     width: 90%;
     margin: 0 auto;
     max-width: 1050px;
@@ -349,7 +404,6 @@ button:hover {
 /*הסדר הרצוי בשורטהאנד*/
 /*background: coral url() no-repeat 50px 50px;*/
 
-
 .blog1 {
     background-size: cover;
     background-repeat: no-repeat;
@@ -379,11 +433,11 @@ button:hover {
     background: url(../Media/blog/post_quality-750x508.jpeg) no-repeat 55% 0;
 }
 
-/*responsive design*/
-@media (max-width: 1050px) {
-   .content-center {
-        max-width: px;
-    }
-}
+/*!*responsive design*!*/
+/*@media (max-width: 1050px) {*/
+/*.content-center {*/
+/*max-width: px;*/
+/*}*/
+/*}*/
 
 
