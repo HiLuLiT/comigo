@@ -84,15 +84,19 @@ a:active {
 
 /*===============Intro & Why comigo sections==========================*/
 
+/*height has view-ports width as value, to keep aspect ratio (745 dvided by 1920 =0.388.
+since viewport values are in percentages, the value is 38.8v-width )*/
+
 .intro {
-    height: 35rem;
-    background: url(../Media/other/homepage-featured-new-1920x745.jpg) no-repeat center;
+    height: 38.88vw;
+    background: url(../Media/other/homepage-featured-new-1920x745.jpg) no-repeat;
     background-size: cover;
     text-align: center;
+    /*border: 1px solid red;*/
 }
 
 .intro-content {
-    padding: 10rem;
+    padding-top: 10%;
 }
 
 h1 {
@@ -249,7 +253,6 @@ button:hover {
     margin: 0;
     width: 390px;
 }
-
 
 /*==================your-content section======================*/
 
