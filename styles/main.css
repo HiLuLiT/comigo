@@ -52,6 +52,7 @@ a:active {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 10;
 }
 
 .logo-wrapper {
@@ -90,7 +91,7 @@ a:active {
     width: 100%;
 }
 
-/*moves the menu up next to the logo - makes it behave like an inline block*/
+/*moves the menu up next to the logo - makes it float right*/
 .main-menu {
     float: right;
     font-weight: 200;
@@ -201,7 +202,7 @@ h1 {
     font-size: 1.125rem;
 }
 
-/*======================== all the red buttons ============================*/
+/*======================== all the red buttons on page ============================*/
 
 .red-btn:link,
 .red-btn:visited {
@@ -220,60 +221,6 @@ h1 {
 .red-btn:focus {
     color: black;
 
-}
-
-/*================== enhancement & deploy section =====================*/
-
-.enhance {
-    background-image: url(../Media/other/ic_EI_cloud_2_home_page.png), url(../Media/other/home-tv-service-bg1.png);
-    background-size: contain, cover;
-    background-position: center, center;
-    height: 400px;
-    width: 50%;
-    background-repeat: no-repeat, no-repeat;
-}
-
-.enhance h2 {
-    color: white;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.enhance p {
-    color: white;
-    font-weight: 200;
-}
-
-.deploy {
-    background-image: url(../Media/other/ic-stb-screens.png), url(../Media/other/home-tv-service-bg2.png);
-    background-size: contain, cover;
-    background-position: center, center;
-    height: 400px;
-    width: 50%;
-    background-repeat: no-repeat, no-repeat;
-}
-
-.deploy h2 {
-    color: black;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-.deploy p {
-    color: black;
-    font-weight: 200;
-}
-
-/*==================white button inside enhance section ==========================*/
-
-.enhance .white-btn {
-    background-color: white;
-    color: red;
-    padding: 10px;
-    border-radius: 20px;
-    font-size: 11.52px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
 }
 
 /*=================SERVICES section MIDDLE =======================*/
@@ -321,13 +268,73 @@ button:hover {
     width: 390px;
 }
 
+/*================== enhancement & deploy section =====================*/
+
+.enhance-content {
+    background-image: url(../Media/other/ic_EI_cloud_2_home_page.png), url(../Media/other/home-tv-service-bg1.png);
+    background-position: center 50px, center;
+    background-size: 367px 272px, contain;
+    height: 42vw;
+    width: 50%;
+    background-repeat: no-repeat, no-repeat;
+    float: left;
+    color:white;
+}
+.enhance-content h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 250px;
+    font-size: 2.25rem;
+
+}
+
+.enhance-content p {
+    font-weight: 200;
+}
+
+.deploy-content {
+    background-image: url(../Media/other/ic-stb-screens.png), url(../Media/other/home-tv-service-bg2.png);
+    background-position: center, center;
+    height: 42vw;
+    width: 50%;
+    background-repeat: no-repeat, no-repeat;
+    float: left;
+}
+
+.deploy-content h2 {
+    color: black;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.deploy-content p {
+    color: black;
+    font-weight: 200;
+}
+
+/*==================white button inside enhance section ==========================*/
+
+.enhance .white-btn {
+    background-color: white;
+    color: red;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 11.52px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
 /*==================your-content section======================*/
 
 .experience {
+    clear: both;
+}
+
+.experience {
     background-image: url(../Media/other/screen_whos_on.jpg);
-    background-size: contain;
-    background-position: 120%;
-    height: 600px;
+    background-size: 60% auto;
+    background-position: 115%;
+    height: 705.59px;
     background-repeat: no-repeat;
 }
 
@@ -348,23 +355,11 @@ button:hover {
 }
 
 .experience-wrap {
-    padding-left: 100px;
-    padding-top: 20px;
-    margin: 0;
-    width:200px;
-    height: 400px;
+    padding-left: 222px;
+    padding-top: 127px;
 }
 
 /*================learn more section =====================*/
-
-/*.learn-more h2 {*/
-    /*font-size: 3.375rem;*/
-    /**/
-    /**/
-    /**/
-    /*height: 200px;*/
-    /*width: 400px;*/
-/*}*/
 
 .brochure {
     background-color: #F14848;
@@ -401,6 +396,9 @@ button:hover {
 
 .demo p {
     margin: 0;
+    padding-top: 4%;
+    padding-left: 6%;
+    width: 42%;
 }
 
 .social {
@@ -423,6 +421,7 @@ button:hover {
 
 
 .header-learn-more {
+    position: relative;
     float: left;
     width: 70%;
     height: 20.485vw;
@@ -430,10 +429,11 @@ button:hover {
 }
 
 .header-learn-more h2 {
+    padding-left: 16%;
+    padding-left: 16%;
+    padding-top: 24%;
+    width: 100%;
     margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 0;
-    width: 433px;
     line-height: 4rem;
     font-size: 3.5rem;
     text-transform: uppercase;
@@ -583,4 +583,23 @@ button:hover {
 /*}*/
 /*}*/
 
+/*Helpers*/
 
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
