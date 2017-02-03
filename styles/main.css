@@ -229,13 +229,75 @@ h1 {
 
 /*=================SERVICES section MIDDLE =======================*/
 /*colors all buttons in grey*/
+
+.services {
+    height: 40vw;
+}
+
+.services-figures {
+    display: inline-block;
+    position: relative;
+    width: 75%;
+    padding-left: 10%;
+    padding-top: 3.5%;
+}
+
+.services-figures figure {
+    position: absolute;
+    left: 37%;
+    top: 14%;
+}
+
+.services-figures img {
+    position: absolute;
+    top: 50px;
+    display: block;
+    max-width: 100%;
+    /*max-height: 85%;*/
+    margin: auto;
+}
+.services-figures figcaption {
+    vertical-align: bottom;
+}
+
+
+.services-headers {
+    display: inline-block;
+    float:left;
+    padding-left: 15%;
+    padding-top: 4%;
+    width: 25%;
+    text-align: left;
+    color: white;
+}
+.services-headers h2 {
+    font-size: 2rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    line-height: 2.3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.services p {
+    font-weight: 100;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
 .services button {
     color: #707070;
     background-color: transparent;
     border: none;
     text-transform: uppercase;
-    font-size: 1.35rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 100;
+    padding-left: 5%;
+    line-height: 2.4rem;
+}
+
+.services figcaption {
+    color: #B8B8B5;
 }
 
 /*colors hover over buttons with red*/
@@ -248,29 +310,7 @@ button:hover {
     background-color: #36342D;
 }
 
-.services h2 {
-    color: white;
-    font-size: 2rem;
-    font-weight: 200;
-    text-transform: uppercase;
 
-}
-
-.services p {
-    font-weight: 100;
-    color: white;
-}
-
-.services figcaption {
-    color: #B8B8B5;
-}
-
-.wrap-services {
-    padding-left: 200px;
-    padding-top: 100px;
-    margin: 0;
-    width: 390px;
-}
 
 /*================== enhancement & deploy section =====================*/
 
