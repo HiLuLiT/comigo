@@ -255,6 +255,7 @@ h1 {
     position: absolute;
     top: 30px;
     padding-top: 30px;
+    width: 70%;
 
 }
 .services-figures figcaption {
@@ -295,7 +296,11 @@ h1 {
     font-weight: 100;
     padding-left: 5%;
     line-height: 2.4rem;
-
+}
+.services button:active,
+.services button:focus {
+    color: #F14848;
+    outline: none;
 }
 
 .services figcaption {
