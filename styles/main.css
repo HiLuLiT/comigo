@@ -4,12 +4,14 @@
     }
 }
 
-html,
+
 body {
     font: 100% 'source sans pro', sans-serif;
+    padding-top: 66px;
 }
 
 html {
+    font: 100% 'source sans pro', sans-serif;
     box-sizing: border-box;
 }
 
@@ -40,10 +42,6 @@ a:active {
 
 /*===========home button + NAV ======================*/
 
-.body {
-    padding-top: 66px;
-
-}
 .header {
     line-height: 66px;
     width: 100%;
@@ -161,15 +159,17 @@ since viewport values are in percentages, the value is 38.8v-width )*/
     background: url(../Media/other/homepage-featured-new-1920x745.jpg) no-repeat;
     background-size: cover;
     text-align: center;
-    /*border: 1px solid red;*/
+    padding: 13%;
 }
 
 .intro-content {
-    padding-top: 10%;
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
 h1 {
-    font-size: 1.68rem;
+    font-size: 2rem;
+    line-height:2rem;
     color: white;
     font-weight: 300;
     margin: 0;
@@ -184,22 +184,25 @@ h1 {
     line-height: 4rem;
 }
 
-.why {
+.why-comigo-sect {
+    height: 29vw;
     text-align: center;
-    padding: 10%;
+    padding: 4%;
 }
 
-.why h2 {
-    font-size: 2.925rem;
+.why-comigo-sect h2 {
+    font-size: 3rem;
     color: black;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: 200;
+    margin-bottom: 10px;
 }
 
-.why p {
+.why-p {
     color: #A4A4A4;
-    font-weight: 100;
-    font-size: 1.125rem;
+    font-weight: 200;
+    font-size: 1rem;
+    line-height: 0.5rem;
 }
 
 /*======================== all the red buttons on page ============================*/
@@ -207,11 +210,11 @@ h1 {
 .red-btn:link,
 .red-btn:visited {
     background-color: #F14848;
-    padding: 10px;
-    border-radius: 20px;
+    padding: 12px 16px;
+    border-radius: 40px;
     color: white;
-    font-size: 11.52px;
-    letter-spacing: 1.5px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
     font-weight: 300;
 }
