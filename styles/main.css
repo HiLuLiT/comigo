@@ -4,7 +4,6 @@
     }
 }
 
-
 body {
     font: 100% 'source sans pro', sans-serif;
     padding-top: 66px;
@@ -24,6 +23,7 @@ ul {
     padding: 0;
     margin: 0;
 }
+
 /*=========General LoVe HAte ============*/
 
 a:link,
@@ -80,7 +80,6 @@ a:active {
     padding-right: 20px;
 }
 
-
 .main-menu li a {
     display: inline-block;
     line-height: 66px;
@@ -108,21 +107,20 @@ a:active {
     top: 100%;
     left: 0;
     background-color: white;
-    padding:0;
+    padding: 0;
 }
 
 /**first tier of Our solutions**/
-.main-menu ul> li > ul > li {
+.main-menu ul > li > ul > li {
     width: 33.3333%;
     text-align: center;
-    font-size: 2.025rem ;
+    font-size: 2.025rem;
 }
 
 /*!**second tier of our soltions**!*/
 .main-menu ul > li > ul > li > ul {
     position: absolute;
 }
-
 
 /**second tier horizontal split to 50%**/
 .main-menu ul > li > ul > li > ul li {
@@ -144,10 +142,8 @@ a:active {
 
 /*להמשיך אחכ*/
 /*.span {*/
- /*vertical-align: baseline;*/
+/*vertical-align: baseline;*/
 /*}*/
-
-
 
 /*===============Intro & Why comigo sections==========================*/
 
@@ -169,7 +165,7 @@ since viewport values are in percentages, the value is 38.8v-width )*/
 
 h1 {
     font-size: 2rem;
-    line-height:2rem;
+    line-height: 2rem;
     color: white;
     font-weight: 300;
     margin: 0;
@@ -237,6 +233,7 @@ h1 {
 .services-figures figure {
     display: none;
 }
+
 .services-figures ul {
     display: inline-block;
     position: relative;
@@ -260,20 +257,23 @@ h1 {
     position: absolute;
     left: 60px;
 }
+
 .services-figures img {
     position: absolute;
     top: 60px;
     left: 60px;
 }
+
 .services-headers {
     display: inline-block;
-    float:left;
+    float: left;
     padding-left: 15%;
     padding-top: 4%;
     width: 25%;
     text-align: left;
     color: white;
 }
+
 .services-headers h2 {
     font-size: 2rem;
     font-weight: 200;
@@ -299,12 +299,12 @@ h1 {
     padding-left: 5%;
     line-height: 2.4rem;
 }
+
 .services button:active,
 .services button:focus {
     color: #F14848;
     outline: none;
 }
-
 
 /*colors hover over buttons with red*/
 .services button:hover {
@@ -316,36 +316,41 @@ h1 {
     position: absolute;
 }
 
-
 /*colors section background in grey*/
 .services {
     background-color: #36342D;
 }
 
-
-
 /*================== enhancement & deploy section =====================*/
 
 .enhance-content {
     background-image: url(../Media/other/ic_EI_cloud_2_home_page.png), url(../Media/other/home-tv-service-bg1.png);
-    background-position: center 50px, center;
-    background-size: 367px 272px, contain;
+    background-position: center 15%, 0;
+    background-size: 367px 272px, 725px 605px;
     height: 42vw;
     width: 50%;
     background-repeat: no-repeat, no-repeat;
     float: left;
-    color:white;
+    color: white;
 }
+
 .enhance-content h2 {
+    display: block;
+    margin: 0;
+    padding-top: 51%;
+    padding-left: 28%;
+    width: 60%;
+    text-align: left;
     font-weight: 300;
     text-transform: uppercase;
-    width: 250px;
     font-size: 2.25rem;
-
 }
 
 .enhance-content p {
+    display: block;
+    padding-left: 28%;
     font-weight: 200;
+    margin: 0;
 }
 
 .deploy-content {
@@ -361,6 +366,7 @@ h1 {
     color: black;
     font-weight: 200;
     text-transform: uppercase;
+    position: relative;
 }
 
 .deploy-content p {
@@ -370,13 +376,17 @@ h1 {
 
 /*==================white button inside enhance section ==========================*/
 
-.enhance .white-btn {
+.enhance-content .white-btn {
+    position: absolute;
+    left: 14%;
+    margin-top: 12px;
     background-color: white;
     color: red;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
-    font-size: 11.52px;
-    letter-spacing: 1.5px;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
@@ -475,7 +485,6 @@ h1 {
     height: 40.97vw;
 }
 
-
 .header-learn-more {
     position: relative;
     float: left;
@@ -508,12 +517,12 @@ h1 {
     width: 30%;
     height: 20.485vw;
 }
+
 .meeting-box {
     float: right;
     width: 70%;
     height: 20.485vw;
 }
-
 
 /*===============site footer======================*/
 
