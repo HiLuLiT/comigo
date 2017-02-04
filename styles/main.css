@@ -249,20 +249,22 @@ h1 {
     position: absolute;
     left: 37%;
     top: 14%;
+    width: 80%;
 }
 
+.services-figures figcaption {
+    color: #B8B8B5;
+    font-weight: 100;
+    text-align: center;
+    width: 40%;
+    position: absolute;
+    left: 60px;
+}
 .services-figures img {
     position: absolute;
-    top: 30px;
-    padding-top: 30px;
-    width: 70%;
-
+    top: 60px;
+    left: 60px;
 }
-.services-figures figcaption {
-    vertical-align: bottom;
-}
-
-
 .services-headers {
     display: inline-block;
     float:left;
@@ -303,12 +305,6 @@ h1 {
     outline: none;
 }
 
-.services figcaption {
-    color: #B8B8B5;
-    font-weight: 100;
-    text-align: center;
-    width: 70%;
-}
 
 /*colors hover over buttons with red*/
 .services button:hover {
@@ -319,7 +315,6 @@ h1 {
     display: inline-block;
     position: absolute;
 }
-
 
 
 /*colors section background in grey*/
