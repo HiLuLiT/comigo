@@ -422,7 +422,7 @@ h1 {
     background-image: url(../Media/other/screen_whos_on.jpg);
     background-size: 60% auto;
     background-position: 115%;
-    height: 705.59px;
+    height: 705px;
     background-repeat: no-repeat;
 }
 
@@ -443,22 +443,51 @@ h1 {
 }
 
 .experience-wrap {
-    padding-left: 222px;
-    padding-top: 127px;
+    padding-left: 200px;
+    padding-top: 110px;
 }
 
 /*================learn more section =====================*/
 
+
+.learn-more {
+    height: 42vw;
+}
 .brochure {
     background-color: #F14848;
     font-weight: 100;
     color: white;
-    height: 200px;
-    width: 200px;
+}
+
+.brochure p {
+    padding-top: 245px;
+    width: 90%;
+    padding-left: 621px;
+}
+
+
+.header-learn-more {
+    float: left;
+    width: 70%;
+    background-color: #F9F9F9;
+    position: relative;
+
+}
+
+.header-learn-more h2 {
+    padding-left: 7%;
+    padding-top: 24%;
+    width: 91%;
+    margin-top: 0;
+    line-height: 4rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background-color: #F9F9F9;
+    font-weight: 100;
+    letter-spacing: 2px;
 }
 
 .meeting-box {
-    height: 200px;
     width: 450px;
     background-color: #E8E8E8;
     background-image: url(../Media/other/img-event-IBC.jpg);
@@ -473,8 +502,7 @@ h1 {
     background-image: url(../Media/other/screen_demo.jpg);
     background-size: 556px 419px;
     background-repeat: no-repeat;
-    height: 591px;
-    width: 589px;
+    height: 615px;
     background-color: #EFEFEF;
     background-position: right bottom;
     font-size: 3rem;
@@ -486,11 +514,10 @@ h1 {
     margin: 0;
     padding-top: 4%;
     padding-left: 6%;
-    width: 42%;
+    width: 50%;
 }
 
 .social {
-    height: 150px;
     width: 150px;
     background-color: #EFEFEF;
 }
@@ -498,42 +525,12 @@ h1 {
 .learn-left {
     float: left;
     width: 60%;
-    height: 40.97vw;
 }
 
 .learn-right {
     float: left;
     width: 40%;
-    height: 40.97vw;
 }
-
-.header-learn-more {
-    position: relative;
-    float: left;
-    width: 70%;
-    height: 20.485vw;
-    background-color: #F9F9F9
-}
-
-.header-learn-more h2 {
-    padding-left: 16%;
-    padding-left: 16%;
-    padding-top: 24%;
-    width: 100%;
-    margin-top: 0;
-    line-height: 4rem;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    background-color: #F9F9F9;
-    font-weight: 100;
-}
-
-.brochure {
-    float: right;
-    width: 30%;
-    height: 20.485vw;
-}
-
 .social {
     float: left;
     width: 30%;
@@ -546,6 +543,9 @@ h1 {
     height: 20.485vw;
 }
 
+.meeting-box p {
+    width: 32%;
+}
 /*===============site footer======================*/
 
 .blog {
