@@ -547,63 +547,6 @@ h1 {
     width: 32%;
 }
 
-/*===============site footer======================*/
-
-/*sets footer bg color*/
-
-.footer-nav {
-    background-color: #1E2024;
-    color: grey;
-}
-
-/*sets margin to footers content*/
-.content-center {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1050px;
-}
-
-/*links color*/
-
-.bottom-nav ul li a {
-    color: #707070;
-}
-
-.bottom-nav > li > a {
-    color: white;
-}
-
-.bottom-nav ul li a:hover {
-    color: red;
-}
-
-/*==========copyrights footer================*/
-
-/*copyrights footer bg color*/
-.footer-copyright {
-    color: #707070;
-    background-color: black;
-}
-
-.footer-copyright ul li a {
-    color: #707070;
-}
-
-.footer-copyright a:hover {
-    color: white;
-}
-
-/*colors fatlady link*/
-.footer-copyright a {
-    color: #707070;
-}
-
-.content-center {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1050px;
-}
-
 /*=================== blog ===================*/
 
 .blog {
@@ -630,7 +573,7 @@ h1 {
 }
 
 .blog .list-content p {
-    margin-bottom :1%;
+    margin-bottom: 1%;
     margin-left: 5%;
     width: 80%;
     font-size: 1rem;
@@ -680,7 +623,7 @@ h1 {
 .blog-header p {
     position: absolute;
     left: 20px;
-    bottom:5px;
+    bottom: 5px;
     font-size: 1.2rem;
     color: white;
     font-weight: 100;
@@ -717,6 +660,88 @@ h1 {
 .blog5 {
     background-size: cover;
     background: url(../Media/blog/post_quality-750x508.jpeg) no-repeat 55% 0;
+}
+
+/*===============site footer======================*/
+
+/*sets footer bg color*/
+
+/*.footer {*/
+/*display: block;*/
+/*}*/
+.footer-nav {
+    background-color: #1E2024;
+    height: 19vw;
+    font-size: 0.8rem;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+/*sets margin to footers content*/
+.content-center {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1050px;
+}
+
+.content-center nav > ul {
+    display: inline-block;
+    width: 27%;
+    padding-top: 7%;
+    line-height: 20px;
+    position: relative;
+
+}
+
+.content-center nav ul ul {
+    width: 40%;
+}
+
+.content-center a img {
+    position: absolute;
+    left: 1020px;
+
+}
+/*links color*/
+
+.content-center ul li a {
+    color: #707070;
+}
+
+.content-center nav > ul > li > a {
+    color: white;
+}
+
+
+.content-center li > ul > li > a:hover {
+    color: red;
+}
+
+/*==========copyrights footer================*/
+
+/*copyrights footer bg color*/
+.footer-copyright {
+    color: #707070;
+    background-color: black;
+}
+
+.footer-copyright ul li a {
+    color: #707070;
+}
+
+.footer-copyright a:hover {
+    color: white;
+}
+
+/*colors fatlady link*/
+.footer-copyright a {
+    color: #707070;
+}
+
+.content-center {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1050px;
 }
 
 /*!*responsive design*!*/
