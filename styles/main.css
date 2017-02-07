@@ -1,143 +1,143 @@
 @media (max-width: 700px) {
-    .main-menu {
-        display: none;
-    }
+  .main-menu {
+    display: none;
+  }
 }
 
 body {
-    font: 100% 'source sans pro', sans-serif;
-    padding-top: 66px;
+  font: 100% 'source sans pro', sans-serif;
+  padding-top: 66px;
 }
 
 html {
-    font: 100% 'source sans pro', sans-serif;
-    box-sizing: border-box;
+  font: 100% 'source sans pro', sans-serif;
+  box-sizing: border-box;
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /*=========General LoVe HAte ============*/
 
 a:link,
 a:visited {
-    color: #171717;
-    text-decoration: none;
+  color: #171717;
+  text-decoration: none;
 }
 
 /*colors every hover over link with red and focus on it */
 a:hover,
 a:focus,
 a:active {
-    color: #F14848;
-    outline: none;
+  color: #F14848;
+  outline: none;
 }
 
 /*===========home button + NAV ======================*/
 
 .header {
-    line-height: 66px;
-    width: 100%;
-    background-color: white;
-    /**makes nav sticky + the first reference point for absolute**/
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
+  line-height: 66px;
+  width: 100%;
+  background-color: white;
+  /**makes nav sticky + the first reference point for absolute**/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .logo-wrapper {
-    display: inline-block;
-    line-height: 66px;
-    padding-left: 20px;
+  display: inline-block;
+  line-height: 66px;
+  padding-left: 20px;
 }
 
 .logo-wrapper img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 /*Bold +red home button*/
 .main-menu .home-nav {
-    color: #F14848;
-    font-weight: bold;
+  color: #F14848;
+  font-weight: bold;
 }
 
 /*sorts all <li> elements in a row*/
 .main-menu li {
-    float: left;
+  float: left;
 }
 
 /*sorts nav in dimensions without margins*/
 .main-menu ul {
-    margin: 0;
-    padding-right: 20px;
+  margin: 0;
+  padding-right: 20px;
 }
 
 .main-menu li a {
-    display: inline-block;
-    line-height: 66px;
-    padding: 0 10px;
-    /*border: 1px solid  red;*/
-    width: 100%;
+  display: inline-block;
+  line-height: 66px;
+  padding: 0 10px;
+  /*border: 1px solid  red;*/
+  width: 100%;
 }
 
 /*moves the menu up next to the logo - makes it float right*/
 .main-menu {
-    float: right;
-    font-weight: 200;
+  float: right;
+  font-weight: 200;
 }
 
 /*hide all sub-menus*/
 .main-menu ul ul {
-    display: none;
+  display: none;
 }
 
 /*hovers ul on each li*/
 .main-menu li:hover > ul {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    left: 0;
-    background-color: white;
-    padding: 0;
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 0;
 }
 
 /**first tier of Our solutions**/
 .main-menu ul > li > ul > li {
-    width: 33.3333%;
-    text-align: center;
-    font-size: 2.025rem;
+  width: 33.3333%;
+  text-align: center;
+  font-size: 2.025rem;
 }
 
 /*!**second tier of our soltions**!*/
 .main-menu ul > li > ul > li > ul {
-    position: absolute;
+  position: absolute;
 }
 
 /**second tier horizontal split to 50%**/
 .main-menu ul > li > ul > li > ul li {
-    width: 50%;
+  width: 50%;
 }
 
 .main-menu ul ul a:hover {
-    display: inline-block;
-    background-color: #F14848;
-    width: 100%;
-    height: 100%;
-    color: white;
+  display: inline-block;
+  background-color: #F14848;
+  width: 100%;
+  height: 100%;
+  color: white;
 }
 
 .main-menu ul ul a {
-    display: inline-block;
-    line-height: 150px;
+  display: inline-block;
+  line-height: 150px;
 }
 
 /*להמשיך אחכ*/
@@ -151,515 +151,533 @@ a:active {
 since viewport values are in percentages, the value is 38.8v-width )*/
 
 .intro {
-    height: 38.88vw;
-    background: url(../Media/other/homepage-featured-new-1920x745.jpg) no-repeat;
-    background-size: cover;
-    text-align: center;
-    padding: 13%;
+  height: 38.88vw;
+  background: url(../Media/other/homepage-featured-new-1920x745.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 13%;
 }
 
 .intro-content {
-    font-size: 2rem;
-    line-height: 2rem;
+  font-size: 2rem;
+  line-height: 2rem;
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: 2rem;
-    color: white;
-    font-weight: 300;
-    margin: 0;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: white;
+  font-weight: 300;
+  margin: 0;
 }
 
 .intro h2 {
-    font-size: 4.05rem;
-    color: white;
-    font-weight: 400;
-    margin-top: 0;
-    margin-bottom: 25px;
-    line-height: 4rem;
+  font-size: 4.05rem;
+  color: white;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 25px;
+  line-height: 4rem;
 }
 
 .why-comigo-sect {
-    height: 29vw;
-    text-align: center;
-    padding: 4%;
+  height: 29vw;
+  text-align: center;
+  padding: 4%;
 }
 
 .why-comigo-sect h2 {
-    font-size: 3rem;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 200;
-    margin-bottom: 10px;
+  font-size: 3rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 200;
+  margin-bottom: 10px;
 }
 
 .why-p {
-    color: #A4A4A4;
-    font-weight: 200;
-    font-size: 1rem;
-    line-height: 0.5rem;
-    margin-bottom: 40px;
+  color: #A4A4A4;
+  font-weight: 200;
+  font-size: 1rem;
+  line-height: 0.5rem;
+  margin-bottom: 40px;
 }
 
 /*======================== all the red buttons on page ============================*/
 
 .red-btn:link,
 .red-btn:visited {
-    background-color: #F14848;
-    padding: 12px 16px;
-    border-radius: 40px;
-    color: white;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: 300;
+  background-color: #F14848;
+  padding: 12px 16px;
+  border-radius: 40px;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+  transition-property: box-shadow, transform;
+  transition-duration: 200ms, 200ms;
 }
 
 .red-btn:hover,
 .red-btn:active,
 .red-btn:focus {
-    color: black;
-
+  box-shadow: 0 5px 20px 3px rgba(4, 4, 6, 0.2);
+  transform: translateY(-7px);
 }
 
 /*=================SERVICES section MIDDLE =======================*/
 /*colors all buttons in grey*/
 
 .services {
-    height: 40vw;
+  height: 40vw;
 }
 
 .services-figures figure {
-    display: none;
+  display: none;
 }
 
 .services-figures ul {
-    display: inline-block;
-    position: relative;
-    width: 75%;
-    padding-left: 10%;
-    padding-top: 3.5%;
+  display: inline-block;
+  position: relative;
+  width: 75%;
+  padding-left: 10%;
+  padding-top: 3.5%;
 }
 
 .services-figures figure {
-    position: absolute;
-    left: 37%;
-    top: 14%;
-    width: 80%;
+  position: absolute;
+  left: 37%;
+  top: 14%;
+  width: 80%;
 }
 
 .services-figures figcaption {
-    color: #B8B8B5;
-    font-weight: 100;
-    text-align: center;
-    width: 40%;
-    position: absolute;
-    left: 60px;
+  color: #B8B8B5;
+  font-weight: 100;
+  text-align: center;
+  width: 40%;
+  position: absolute;
+  left: 60px;
 }
 
 .services-figures img {
-    position: absolute;
-    top: 60px;
-    left: 60px;
+  position: absolute;
+  top: 60px;
+  left: 60px;
 }
 
 .services-headers {
-    display: inline-block;
-    float: left;
-    padding-left: 15%;
-    padding-top: 4%;
-    width: 25%;
-    text-align: left;
-    color: white;
+  display: inline-block;
+  float: left;
+  padding-left: 15%;
+  padding-top: 4%;
+  width: 25%;
+  text-align: left;
+  color: white;
 }
 
 .services-headers h2 {
-    font-size: 2rem;
-    font-weight: 200;
-    text-transform: uppercase;
-    line-height: 2.3rem;
-    margin-top: 0;
-    margin-bottom: 0;
+  font-size: 2rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  line-height: 2.3rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .services p {
-    font-weight: 100;
-    font-size: 1rem;
-    margin-top: 10px;
+  font-weight: 100;
+  font-size: 1rem;
+  margin-top: 10px;
 }
 
 .services button {
-    color: #707070;
-    background-color: transparent;
-    border: none;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    font-weight: 100;
-    padding-left: 5%;
-    line-height: 2.4rem;
+  color: #707070;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding-left: 5%;
+  line-height: 2.4rem;
 }
 
 .services button:active,
 .services button:focus {
-    color: #F14848;
-    outline: none;
+  color: #F14848;
+  outline: none;
 }
 
 /*colors hover over buttons with red*/
 .services button:hover {
-    color: #F14848;
+  color: #F14848;
 }
 
 .services-figures li:hover figure {
-    display: inline-block;
-    position: absolute;
+  display: inline-block;
+  position: absolute;
 }
 
 /*colors section background in grey*/
 .services {
-    background-color: #36342D;
+  background-color: #36342D;
 }
 
 /*================== enhancement & deploy section =====================*/
 
 .enhance-content {
-    background-image: url(../Media/other/ic_EI_cloud_2_home_page.png), url(../Media/other/home-tv-service-bg1.png);
-    background-position: center 15%, 0;
-    background-size: 367px 272px, 725px 605px;
-    height: 42vw;
-    width: 50%;
-    background-repeat: no-repeat, no-repeat;
-    float: left;
-    color: white;
+  background-image: url(../Media/other/ic_EI_cloud_2_home_page.png), url(../Media/other/home-tv-service-bg1.png);
+  background-position: center 15%, 0;
+  background-size: 367px 272px, 725px 605px;
+  height: 42vw;
+  width: 50%;
+  background-repeat: no-repeat, no-repeat;
+  float: left;
+  color: white;
 }
 
 .enhance-content h2 {
-    display: block;
-    margin: 0;
-    padding-top: 51%;
-    padding-left: 28%;
-    width: 60%;
-    text-align: left;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 2.25rem;
+  display: block;
+  margin: 0;
+  padding-top: 51%;
+  padding-left: 28%;
+  width: 60%;
+  text-align: left;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.25rem;
 }
 
 .enhance-content p {
-    display: block;
-    padding-left: 28%;
-    font-weight: 200;
-    margin: 0;
+  display: block;
+  padding-left: 28%;
+  font-weight: 200;
+  margin: 0;
 }
 
 .deploy-content {
-    background-image: url(../Media/other/ic-stb-screens.png), url(../Media/other/home-tv-service-bg2.png);
-    background-position: 10% 10%, 0;
-    background-size: 43%, 720px 605px;
-    height: 42vw;
-    width: 50%;
-    background-repeat: no-repeat, no-repeat;
-    float: left;
-    position: relative;
+  background-image: url(../Media/other/ic-stb-screens.png), url(../Media/other/home-tv-service-bg2.png);
+  background-position: 10% 10%, 0;
+  background-size: 43%, 720px 605px;
+  height: 42vw;
+  width: 50%;
+  background-repeat: no-repeat, no-repeat;
+  float: left;
+  position: relative;
 }
 
 .deploy-content h2 {
-    display: block;
-    margin: 0;
-    padding-top: 51%;
-    padding-left: 7%;
-    color: black;
-    width: 60%;
-    text-align: left;
-    font-weight: 300;
-    text-transform: uppercase;
-    font-size: 2.25rem;
+  display: block;
+  margin: 0;
+  padding-top: 51%;
+  padding-left: 7%;
+  color: black;
+  width: 60%;
+  text-align: left;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2.25rem;
 }
 
 .deploy-content p {
-    display: block;
-    padding-left: 7%;
-    font-weight: 200;
-    color: black;
-    margin: 0;
+  display: block;
+  padding-left: 7%;
+  font-weight: 200;
+  color: black;
+  margin: 0;
 }
 
 .deploy-content .red-btn {
-    position: absolute;
-    left: 7%;
-    margin-top: 12px;
-    padding: 15px;
-    border-radius: 20px;
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: 2px;
+  position: absolute;
+  left: 7%;
+  margin-top: 12px;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
 }
 
 /*==================white button inside enhance section ==========================*/
 
 .enhance-content .white-btn {
-    position: absolute;
-    left: 14%;
-    margin-top: 12px;
-    background-color: white;
-    color: red;
-    padding: 15px;
-    border-radius: 20px;
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  position: absolute;
+  left: 14%;
+  margin-top: 12px;
+  background-color: white;
+  color: red;
+  padding: 15px;
+  border-radius: 20px;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 /*==================your-content section======================*/
 
 .experience {
-    clear: both;
+  clear: both;
 }
 
 .experience {
-    background-image: url(../Media/other/screen_whos_on.jpg);
-    background-size: 60% auto;
-    background-position: 115%;
-    height: 705px;
-    background-repeat: no-repeat;
+  background-image: url(../Media/other/screen_whos_on.jpg);
+  background-size: 60% auto;
+  background-position: 115%;
+  height: 705px;
+  background-repeat: no-repeat;
 }
 
 .experience h2 {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 3rem;
-    width: 200px;
-    margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3rem;
+  width: 200px;
+  margin-bottom: 0;
 
 }
 
 .experience p {
-    font-weight: 200;
-    width: 200px;
-    margin-top: 0;
+  font-weight: 200;
+  width: 200px;
+  margin-top: 0;
 
 }
 
 .experience-wrap {
-    padding-left: 200px;
-    padding-top: 110px;
+  padding-left: 200px;
+  padding-top: 110px;
 }
 
 /*================learn more section =====================*/
 
 .learn-more {
-    height: 42vw;
+  height: 42vw;
 }
 
 .brochure {
-    background-color: #F14848;
-    font-weight: 100;
-    color: white;
+  background-color: #F14848;
+  font-weight: 100;
+  color: white;
 }
 
 .brochure p {
-    padding-top: 245px;
-    width: 90%;
-    padding-left: 621px;
+  padding-top: 245px;
+  width: 90%;
+  padding-left: 621px;
 }
 
 .header-learn-more {
-    float: left;
-    width: 70%;
-    background-color: #F9F9F9;
-    position: relative;
+  float: left;
+  width: 70%;
+  background-color: #F9F9F9;
+  position: relative;
 
 }
 
 .header-learn-more h2 {
-    padding-left: 7%;
-    padding-top: 24%;
-    width: 91%;
-    margin-top: 0;
-    line-height: 4rem;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    background-color: #F9F9F9;
-    font-weight: 100;
-    letter-spacing: 2px;
+  padding-left: 7%;
+  padding-top: 24%;
+  width: 91%;
+  margin-top: 0;
+  line-height: 4rem;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  background-color: #F9F9F9;
+  font-weight: 100;
+  letter-spacing: 2px;
 }
 
 .meeting-box {
-    width: 450px;
-    background-color: #E8E8E8;
-    background-image: url(../Media/other/img-event-IBC.jpg);
-    background-size: 292px 117px;
-    background-repeat: no-repeat;
-    background-position: center;
-    font-size: 1.125rem;
-    text-transform: uppercase;
+  width: 450px;
+  background-color: #E8E8E8;
+  background-image: url(../Media/other/img-event-IBC.jpg);
+  background-size: 292px 117px;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
 
 .demo {
-    background-image: url(../Media/other/screen_demo.jpg);
-    background-size: 556px 419px;
-    background-repeat: no-repeat;
-    height: 615px;
-    background-color: #EFEFEF;
-    background-position: right bottom;
-    font-size: 3rem;
-    text-transform: uppercase;
-    font-weight: 300;
+  background-image: url(../Media/other/screen_demo.jpg);
+  background-size: 556px 419px;
+  background-repeat: no-repeat;
+  height: 615px;
+  background-color: #EFEFEF;
+  background-position: right bottom;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 300;
 }
 
 .demo p {
-    margin: 0;
-    padding-top: 4%;
-    padding-left: 6%;
-    width: 50%;
+  margin: 0;
+  padding-top: 4%;
+  padding-left: 6%;
+  width: 50%;
 }
 
 .social {
-    width: 150px;
-    background-color: #EFEFEF;
+  width: 150px;
+  background-color: #EFEFEF;
 }
 
 .learn-left {
-    float: left;
-    width: 60%;
+  float: left;
+  width: 60%;
 }
 
 .learn-right {
-    float: left;
-    width: 40%;
+  float: left;
+  width: 40%;
+  transition-property: box-shadow, transform;
+  transition-duration: 200ms, 200ms;
+}
+
+.learn-right:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 20px 3px rgba(4, 4, 6, 0.2);
 }
 
 .social {
-    float: left;
-    width: 30%;
-    height: 20.485vw;
+  float: left;
+  width: 30%;
+  height: 20.485vw;
 }
 
 .meeting-box {
-    float: right;
-    width: 70%;
-    height: 20.485vw;
+  float: right;
+  width: 70%;
+  height: 20.485vw;
 }
 
 .meeting-box p {
-    width: 32%;
+  width: 32%;
 }
 
 /*=================== blog ===================*/
 
 .blog {
-    height: 36vw;
+  height: 36vw;
 }
 
 .blog ul {
-    height: 100%;
+  height: 100%;
 
 }
 
 .blog li {
-    float: left;
-    height: 100%;
-    width: 16.666%;
-    position: relative;
+  float: left;
+  height: 100%;
+  width: 16.666%;
+  position: relative;
+  /*transition-property: transform, height;*/
+  /*transition-duration: 0.3s, 0.3s;*/
+  /*overflow: hidden;*/
 }
 
 .blog .list-content {
-    color: white;
-    position: absolute;
-    bottom: 0;
-
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 
 .blog .list-content p {
-    margin-bottom: 1%;
-    margin-left: 5%;
-    width: 80%;
-    font-size: 1rem;
-    font-weight: 100;
-
-}
-
-.blog li span {
-    display: none;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 100;
 }
 
 .blog span {
-    display: inline-block;
-    bottom: 100%;
-    width: 100%;
-    padding: 30px;
-    font-size: 0.8rem;
-    font-weight: 100;
-    text-transform: uppercase;
-    background-color: #F14848;
-    text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 30px;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  background-color: #F14848;
+  text-align: center;
+
+  /*transition: bottom 1s linear;*/
+  /*bottom: 20px;*/
 }
 
-.blog li:hover span {
-    display: inline-block;
+/*.blog li span:hover {*/
+/*!*display: none;*!*/
+/*}*/
+
+.blog li:hover {
+  transform: scale(1.1);
+  /*height: 84%;*/
+  /*top: 23%;*/
 }
 
 .blog-header {
-    background-color: #F14848;
-    color: white;
-    text-transform: uppercase;
-    font-weight: lighter;
-    position: relative;
+  background-color: #F14848;
+  color: white;
+  text-transform: uppercase;
+  font-weight: lighter;
+  position: relative;
 }
 
 .blog-header h2 {
-    color: white;
-    position: absolute;
-    bottom: 25px;
-    left: 20px;
-    font-weight: 100;
-    font-size: 3.5rem;
-    line-height: 3.3rem;
-    width: 50%;
+  color: white;
+  position: absolute;
+  bottom: 25px;
+  left: 20px;
+  font-weight: 100;
+  font-size: 3.5rem;
+  line-height: 3.3rem;
+  width: 50%;
 }
 
 .blog-header p {
-    position: absolute;
-    left: 20px;
-    bottom: 5px;
-    font-size: 1.2rem;
-    color: white;
-    font-weight: 100;
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 100;
 }
 
 /*הסדר הרצוי בשורטהאנד*/
 /*background: coral url() no-repeat 50px 50px;*/
 
 .blog1 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 0;
-    background-image: url(../Media/blog/ibc_post_EI-750x508.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-image: url(../Media/blog/ibc_post_EI-750x508.png);
 
 }
 
 .blog2 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-image: url(../Media/blog/IMG_9294-750x563.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-image: url(../Media/blog/IMG_9294-750x563.jpeg);
 }
 
 .blog3 {
-    background-size: cover;
-    background: url(../Media/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat 50% 25%;
+  background-size: cover;
+  background: url(../Media/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat 50% 25%;
 }
 
 .blog4 {
-    background-size: cover;
-    background: url(../Media/blog/post_tv_connect-750x508.jpeg) no-repeat 42% 0;
+  background-size: cover;
+  background: url(../Media/blog/post_tv_connect-750x508.jpeg) no-repeat 42% 0;
 }
 
 .blog5 {
-    background-size: cover;
-    background: url(../Media/blog/post_quality-750x508.jpeg) no-repeat 55% 0;
+  background-size: cover;
+  background: url(../Media/blog/post_quality-750x508.jpeg) no-repeat 55% 0;
 }
 
 /*===============site footer======================*/
@@ -670,78 +688,67 @@ h1 {
 /*display: block;*/
 /*}*/
 .footer-nav {
-    background-color: #1E2024;
-    height: 19vw;
-    font-size: 0.8rem;
-    font-weight: 100;
-    text-transform: uppercase;
+  background-color: #1E2024;
+  height: 19vw;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 /*sets margin to footers content*/
 .content-center {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1050px;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1050px;
 }
 
 .content-center nav > ul {
-    display: inline-block;
-    width: 27%;
-    padding-top: 7%;
-    line-height: 20px;
-    position: relative;
+  display: inline-block;
+  width: 27%;
+  padding-top: 7%;
+  line-height: 20px;
+  position: relative;
 
 }
 
 .content-center nav ul ul {
-    width: 40%;
+  width: 40%;
 }
 
 .content-center a img {
-    position: absolute;
-    left: 1020px;
+  position: absolute;
+  left: 1020px;
 
 }
+
 /*links color*/
 
 .content-center ul li a {
-    color: #707070;
+  color: #707070;
 }
 
 .content-center nav > ul > li > a {
-    color: white;
+  color: white;
 }
 
-
 .content-center li > ul > li > a:hover {
-    color: red;
+  color: red;
 }
 
 /*==========copyrights footer================*/
 
-/*copyrights footer bg color*/
+/*copyrights footer colors*/
 .footer-copyright {
-    color: #707070;
-    background-color: black;
-}
-
-.footer-copyright ul li a {
-    color: #707070;
+  color: #707070;
+  background-color: black;
 }
 
 .footer-copyright a:hover {
-    color: white;
+  color: white;
 }
 
-/*colors fatlady link*/
-.footer-copyright a {
-    color: #707070;
-}
-
-.content-center {
-    width: 90%;
-    margin: 0 auto;
-    max-width: 1050px;
+.footer-copyright ul {
+  display: inline-block;
 }
 
 /*!*responsive design*!*/
@@ -764,10 +771,10 @@ h1 {
  */
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " "; /* 1 */
+  display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
