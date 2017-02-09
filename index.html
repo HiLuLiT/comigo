@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700" rel="stylesheet">
@@ -11,6 +12,8 @@
 <body>
 
 <header class="header">
+  <input type="checkbox" id="menu-check">
+  <label for="menu-check">Menu</label>
   <div class="logo-wrapper">
     <a href="#"><img src="Media/comigo-logo.png" alt="comigo-link"></a>
   </div>
@@ -63,7 +66,7 @@
 
   <section class="why-comigo-sect">
     <h2>Why Comigo?</h2>
-    <div class="why-p">
+    <div class="why-wrap-content">
       <p>Comigo Redefines the tv experience,</p>
       <p>infusing it with the full power of the Internet.</p>
     </div>
@@ -76,7 +79,7 @@
       <h2>drive new revenue</h2>
       <p>with highly-relevant contextual services</p>
     </div>
-    <div class="services-figures">
+    <div class="services-list">
       <ul>
         <li>
           <button type="button">Pedia</button>
@@ -128,7 +131,7 @@
     </div>
   </section>
 
-  <section class="enhance&deploy clearfix">
+  <section class="clearfix">
 
     <div class="enhance-content clearfix">
       <h2>enhance any tv service</h2>
@@ -144,7 +147,7 @@
   </section>
 
   <section class="experience">
-    <div class="experience-wrap">
+    <div class="experience-content">
       <h2>your content, comigo's unique experience</h2>
       <p>Intelligence-based contextual WatchApp™ Applications.</p>
       <a class="red-btn" href="#">Learn More</a>
