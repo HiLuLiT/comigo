@@ -35,43 +35,13 @@ a:active {
   outline: none;
 }
 
-/*===========home button + NAV ======================*/
-
-#menu-check {
-  display: none;
-  float: right;
+/*nav setting*/
+/**hides checkbox**/
+input[type=checkbox] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
-
-.header label {
-  display: none;
-  float: right;
-}
-
-.header {
-  line-height: 66px;
-  width: 100%;
-  background-color: white;
-  /**makes nav sticky + the first reference point for absolute**/
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-}
-
-.logo-wrapper {
-  display: inline-block;
-  line-height: 66px;
-  padding-left: 20px;
-}
-
-.logo-wrapper img {
-  vertical-align: middle;
-}
-
-/*להמשיך אחכ*/
-/*.span {*/
-/*vertical-align: baseline;*/
-/*}*/
 
 /*===============Intro & Why comigo sections==========================*/
 
@@ -712,21 +682,49 @@ h1 {
 /*================above 700px =============*/
 
 @media (min-width: 701px) {
-  input[type=checkbox] {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+
+  /*========= Hidden Menu button for media query less than 700px ==========*/
+
+  /*hides menu label*/
+  .header label {
+  display: none;
+  float: right;
+  }
+
+  .main-menu {
+    background-color: white;
+    float: right;
+    font-weight: 200;
+  }
+
+  }
+  .header {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    line-height: 66px;
+    /**makes nav sticky + the first reference point for absolute**/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-left: 25px;
+    padding-right: 20px;
   }
 
   .logo-wrapper {
     display: inline-block;
     line-height: 66px;
-    padding-left: 20px;
   }
 
-  .header label {
-    display: none;
+  .logo-wrapper img {
+    vertical-align: middle;
   }
+
+  /*להמשיך אחכ*/
+  /*.span {*/
+  /*vertical-align: baseline;*/
+  /*}*/
 
   /*Bold +red home button*/
   .main-menu .home-nav {
@@ -739,55 +737,45 @@ h1 {
     float: left;
   }
 
-  /*sorts nav in dimensions without margins*/
-  .main-menu ul {
-    margin: 0;
-    padding-right: 20px;
-  }
-
+  /*spaces between top nav options*/
   .main-menu li a {
-    display: inline-block;
-    line-height: 66px;
     padding: 0 10px;
-    /*border: 1px solid  red;*/
-    width: 100%;
-  }
-
-  /*moves the menu up next to the logo - makes it float right*/
-  .main-menu {
-    float: right;
-    font-weight: 200;
   }
 
   /*hide all sub-menus*/
   .main-menu ul ul {
-    display: none;
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transition-property: height, opacity;
+    transition-duration: .3s;
+  }
+
+  /*sub-menus general setup*/
+  .main-menu ul ul li {
+  text-align: center;
+  font-size: 2.025rem;
+  text-transform: uppercase;
   }
 
   /*hovers ul on each li*/
   .main-menu li:hover > ul {
-    display: block;
     position: absolute;
     width: 100%;
-    top: 100%;
+    height: 150px;
     left: 0;
     background-color: white;
-    padding: 0;
+    opacity: 0.97;
+    overflow: visible;
   }
 
-  /**first tier of Our solutions**/
+  /**first tier horizontal split to 3 (33%)**/
   .main-menu ul > li > ul > li {
     width: 33.3333%;
-    text-align: center;
-    font-size: 2.025rem;
   }
 
-  /*!**second tier of our soltions**!*/
-  .main-menu ul > li > ul > li > ul {
-    position: absolute;
-  }
-
-  /**second tier horizontal split to 50%**/
+  /**second tier horizontal split to 2 (50%)**/
   .main-menu ul > li > ul > li > ul li {
     width: 50%;
   }
@@ -803,12 +791,8 @@ h1 {
   .main-menu ul ul a {
     display: inline-block;
     line-height: 150px;
+    width: 100%;
   }
-}
-
-label {
-  display: none;
-}
 
 /*=============== below 700px ===========*/
 
@@ -817,15 +801,16 @@ label {
     display: none;
   }
 
+  /*shows Menu button below 700px*/
+  .header label {
+    display: block;
+    float: right;
+  }
+
   .logo-wrapper {
     display: block;
     line-height: 66px;
     padding-left: 20px;
-  }
-
-  .header label {
-    display: block;
-    float: right;
   }
 
   .main-menu ul li ul li:before {
@@ -945,4 +930,8 @@ label {
     top: 72%;
   }
 
+  .content-center a img {
+    position: absolute;
+    left: 50%;
+  }
 }
