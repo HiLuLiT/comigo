@@ -479,7 +479,7 @@ h1 {
   width: 16.666%;
   position: relative;
   overflow: hidden;
-  transition: transform 0.3s;
+  transition: transform 0.5s;
 }
 
 /*stretch <a> reach to 100% of li*/
@@ -524,7 +524,8 @@ h1 {
 /*scales bigger <li> when hovered*/
 .blog li:hover {
   transform: scale(1.07);
-  overflow: visible;
+  z-index: 9;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
 }
 
 /*brings up span when hovered*/
@@ -569,6 +570,7 @@ h1 {
 /*background: coral url() no-repeat 50px 50px;*/
 
 .blog1 {
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 0;
