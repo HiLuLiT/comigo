@@ -472,6 +472,7 @@ h1 {
   left: 0;
   width: 100%;
 }
+
 /*sets li in section + hides span buttons*/
 .blog li {
   float: left;
@@ -570,33 +571,47 @@ h1 {
 /*background: coral url() no-repeat 50px 50px;*/
 
 .blog1 {
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-image: url(../Media/blog/ibc_post_EI-750x508.png);
-
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../Media/blog/ibc_post_EI-750x508.png) no-repeat 50% 0;
 }
 
 .blog2 {
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-image: url(../Media/blog/IMG_9294-750x563.jpeg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../Media/blog/IMG_9294-750x563.jpeg) no-repeat 50% 50%;
 }
 
 .blog3 {
   background-size: cover;
-  background: url(../Media/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat 50% 25%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../Media/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat 50% 25%;
 }
 
 .blog4 {
   background-size: cover;
-  background: url(../Media/blog/post_tv_connect-750x508.jpeg) no-repeat 42% 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../Media/blog/post_tv_connect-750x508.jpeg) no-repeat 42% 0;
 }
 
 .blog5 {
   background-size: cover;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../Media/blog/post_quality-750x508.jpeg) no-repeat 55% 0;
+}
+
+.blog li:nth-child(2):hover {
+  background: url(../Media/blog/ibc_post_EI-750x508.png) no-repeat 50% 0;
+}
+
+.blog li:nth-child(3):hover {
+  background: url(../Media/blog/IMG_9294-750x563.jpeg) no-repeat 50% 50%;
+}
+
+.blog li:nth-child(4):hover {
+  background: url(../Media/blog/Image-Blog-Yoav_356121362-copy-750x563.jpg) no-repeat 50% 25%;
+}
+
+.blog li:nth-child(5):hover {
+  background: url(../Media/blog/post_tv_connect-750x508.jpeg) no-repeat 42% 0;
+}
+
+.blog li:nth-child(6):hover {
   background: url(../Media/blog/post_quality-750x508.jpeg) no-repeat 55% 0;
 }
 
