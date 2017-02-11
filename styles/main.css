@@ -460,61 +460,81 @@ h1 {
 
 .blog {
   height: 36vw;
+  position: relative;
 }
 
 .blog ul {
   height: 100%;
-
+  display: block;
+  background-color: #1e2024;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
-
+/*sets li in section + hides span buttons*/
 .blog li {
   float: left;
   height: 100%;
   width: 16.666%;
   position: relative;
-  /*transition-property: transform, height;*/
-  /*transition-duration: 0.3s, 0.3s;*/
-  /*overflow: hidden;*/
+  overflow: hidden;
+  transition: transform 0.3s;
 }
 
+/*stretch <a> reach to 100% of li*/
+.blog li a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+/*color <p> with white and positions them at the bottom of each li*/
 .blog .list-content {
   color: white;
   position: absolute;
   bottom: 0;
+  width: 100%;
 }
 
+/*styling for Read-More buttons on all li*/
+.blog span {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 31px;
+  font-size: 0.8rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  background-color: #F14848;
+  text-align: center;
+  transition: transform 0.5s;
+}
+
+/*stylying for <p> on all li*/
 .blog .list-content p {
   margin-bottom: 1%;
   margin-left: 5%;
   width: 80%;
   font-size: 1rem;
   font-weight: 100;
+  transition: transform 0.5s;
 }
 
-.blog span {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  width: 100%;
-  padding: 30px;
-  font-size: 0.8rem;
-  font-weight: 100;
-  text-transform: uppercase;
-  background-color: #F14848;
-  text-align: center;
-
-  /*transition: bottom 1s linear;*/
-  /*bottom: 20px;*/
-}
-
-/*.blog li span:hover {*/
-/*!*display: none;*!*/
-/*}*/
-
+/*scales bigger <li> when hovered*/
 .blog li:hover {
-  transform: scale(1.1);
-  /*height: 84%;*/
-  /*top: 23%;*/
+  transform: scale(1.07);
+  overflow: visible;
+}
+
+/*brings up span when hovered*/
+.blog li:hover span {
+  transform: translateY(-78px);
+}
+
+/*brings up <p> to make room for span*/
+.blog li:hover .list-content p {
+  transform: translateY(-78px);
 }
 
 .blog-header {
@@ -677,18 +697,16 @@ h1 {
   clear: both;
 }
 
-/*============= Media Queries ==============*/
+/*======================== Media Queries ==========================*/
 
 /*================above 700px =============*/
 
 @media (min-width: 701px) {
-
-  /*========= Hidden Menu button for media query less than 700px ==========*/
-
+  /*hidden Menu button for media query less than 700px*/
   /*hides menu label*/
   .header label {
-  display: none;
-  float: right;
+    display: none;
+    float: right;
   }
 
   .main-menu {
@@ -697,102 +715,108 @@ h1 {
     font-weight: 200;
   }
 
-  }
-  .header {
-    display: inline-block;
-    width: 100%;
-    background-color: white;
-    line-height: 66px;
-    /**makes nav sticky + the first reference point for absolute**/
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    padding-left: 25px;
-    padding-right: 20px;
-  }
+}
 
-  .logo-wrapper {
-    display: inline-block;
-    line-height: 66px;
-  }
+.header {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  line-height: 66px;
+  /**makes nav sticky + the first reference point for absolute**/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  padding-left: 25px;
+  padding-right: 20px;
+  box-shadow: 0 5px 15px 3px rgba(4, 4, 6, 0.2);
+}
 
-  .logo-wrapper img {
-    vertical-align: middle;
-  }
+.logo-wrapper {
+  display: inline-block;
+  line-height: 66px;
+}
 
-  /*להמשיך אחכ*/
-  /*.span {*/
-  /*vertical-align: baseline;*/
-  /*}*/
+.logo-wrapper img {
+  vertical-align: middle;
+}
 
-  /*Bold +red home button*/
-  .main-menu .home-nav {
-    color: #F14848;
-    font-weight: bold;
-  }
+ul ul li a span {
+  display: inline-block;
+  line-height: 1.1;
+  width: 60%;
+  vertical-align: middle;
+}
 
-  /*sorts all <li> elements in a row*/
-  .main-menu li {
-    float: left;
-  }
+/*Bold +red home button*/
+.main-menu .home-nav {
+  color: #F14848;
+  font-weight: bold;
+}
 
-  /*spaces between top nav options*/
-  .main-menu li a {
-    padding: 0 10px;
-  }
+/*sorts all <li> elements in a row*/
+.main-menu li {
+  float: left;
+}
 
-  /*hide all sub-menus*/
-  .main-menu ul ul {
-    overflow: hidden;
-    height: 0;
-    width: 0;
-    opacity: 0;
-    transition-property: height, opacity;
-    transition-duration: .3s;
-  }
+/*spaces between top nav options*/
+.main-menu li a {
+  padding: 0 10px;
+}
 
-  /*sub-menus general setup*/
-  .main-menu ul ul li {
+/*hide all sub-menus*/
+.main-menu ul ul {
+  overflow: hidden;
+  height: 0;
+  width: 0;
+  opacity: 0;
+  transition-property: height, opacity;
+  transition-duration: .3s;
+}
+
+/*sub-menus general setup*/
+.main-menu ul ul li {
   text-align: center;
   font-size: 2.025rem;
   text-transform: uppercase;
-  }
+}
 
-  /*hovers ul on each li*/
-  .main-menu li:hover > ul {
-    position: absolute;
-    width: 100%;
-    height: 150px;
-    left: 0;
-    background-color: white;
-    opacity: 0.97;
-    overflow: visible;
-  }
+/*hovers ul on each li*/
+.main-menu li:hover > ul {
+  position: absolute;
+  width: 100%;
+  height: 135px;
+  left: 0;
+  background-color: white;
+  opacity: 0.97;
+  overflow: visible;
+}
 
-  /**first tier horizontal split to 3 (33%)**/
-  .main-menu ul > li > ul > li {
-    width: 33.3333%;
-  }
+/**first tier horizontal split to 3 (33%)**/
+.main-menu ul > li > ul > li {
+  width: 33.3333%;
+}
 
-  /**second tier horizontal split to 2 (50%)**/
-  .main-menu ul > li > ul > li > ul li {
-    width: 50%;
-  }
+/**second tier horizontal split to 2 (50%)**/
+.main-menu ul > li > ul > li > ul li {
+  width: 50%;
+}
 
-  .main-menu ul ul a:hover {
-    display: inline-block;
-    background-color: #F14848;
-    width: 100%;
-    height: 100%;
-    color: white;
-  }
+.main-menu ul ul a:hover {
+  display: inline-block;
+  background-color: #F14848;
+  width: 100%;
+  height: 100%;
+  color: white;
+  box-shadow: 0 5px 15px 3px rgba(4, 4, 6, 0.2);
+}
 
-  .main-menu ul ul a {
-    display: inline-block;
-    line-height: 150px;
-    width: 100%;
-  }
+/**extends reach of hover to 100% <a>**/
+.main-menu ul ul a {
+  display: inline-block;
+  line-height: 135px;
+  width: 100%;
+}
 
 /*=============== below 700px ===========*/
 
