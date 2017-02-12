@@ -102,8 +102,8 @@ h1 {
 
 /*======================== all the red buttons on page ============================*/
 
-.red-btn:link,
-.red-btn:visited {
+.general-btn-red:link,
+.general-btn-red:visited {
   background-color: #F14848;
   padding: 12px 16px;
   border-radius: 40px;
@@ -118,9 +118,9 @@ h1 {
   transition-duration: 200ms, 200ms;
 }
 
-.red-btn:hover,
-.red-btn:active,
-.red-btn:focus {
+.general-btn-red:hover,
+.general-btn-red:active,
+.general-btn-red:focus {
   box-shadow: 0 5px 20px 3px rgba(4, 4, 6, 0.2);
   transform: translateY(-7px);
 }
@@ -287,7 +287,7 @@ h1 {
   margin: 0;
 }
 
-.deploy-content .red-btn {
+.deploy-content .general-btn-red {
   position: absolute;
   left: 7%;
   margin-top: 12px;
@@ -298,9 +298,12 @@ h1 {
   letter-spacing: 2px;
 }
 
+
+
 /*==================white button inside enhance section ==========================*/
 
-.enhance-content .white-btn {
+.general-btn-white:link,
+.general-btn-white:visited {
   position: absolute;
   left: 14%;
   margin-top: 12px;
@@ -312,6 +315,15 @@ h1 {
   line-height: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  transition-property: box-shadow, transform;
+  transition-duration: 200ms, 200ms;
+}
+
+.general-btn-white:hover,
+.general-btn-white:active,
+.general-btn-white:focus {
+  box-shadow: 0 5px 20px 3px rgba(4, 4, 6, 0.2);
+  transform: translateY(-7px);
 }
 
 /*==================your-content section======================*/
@@ -732,107 +744,106 @@ h1 {
     font-weight: 200;
   }
 
-}
+  .header {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    line-height: 66px;
+    /**makes nav sticky + the first reference point for absolute**/
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding-left: 25px;
+    padding-right: 20px;
+    box-shadow: 0 5px 15px 3px rgba(4, 4, 6, 0.2);
+  }
 
-.header {
-  display: inline-block;
-  width: 100%;
-  background-color: white;
-  line-height: 66px;
-  /**makes nav sticky + the first reference point for absolute**/
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  padding-left: 25px;
-  padding-right: 20px;
-  box-shadow: 0 5px 15px 3px rgba(4, 4, 6, 0.2);
-}
+  .logo-wrapper {
+    display: inline-block;
+    line-height: 66px;
+  }
 
-.logo-wrapper {
-  display: inline-block;
-  line-height: 66px;
-}
+  .logo-wrapper img {
+    vertical-align: middle;
+  }
 
-.logo-wrapper img {
-  vertical-align: middle;
-}
+  ul ul li a span {
+    display: inline-block;
+    line-height: 1.1;
+    width: 60%;
+    vertical-align: middle;
+  }
 
-ul ul li a span {
-  display: inline-block;
-  line-height: 1.1;
-  width: 60%;
-  vertical-align: middle;
-}
+  /*Bold +red home button*/
+  .main-menu .home-nav {
+    color: #F14848;
+    font-weight: bold;
+  }
 
-/*Bold +red home button*/
-.main-menu .home-nav {
-  color: #F14848;
-  font-weight: bold;
-}
+  /*sorts all <li> elements in a row*/
+  .main-menu li {
+    float: left;
+  }
 
-/*sorts all <li> elements in a row*/
-.main-menu li {
-  float: left;
-}
+  /*spaces between top nav options*/
+  .main-menu li a {
+    padding: 0 10px;
+  }
 
-/*spaces between top nav options*/
-.main-menu li a {
-  padding: 0 10px;
-}
+  /*hide all sub-menus*/
+  .main-menu ul ul {
+    overflow: hidden;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    transition-property: height, opacity;
+    transition-duration: .3s;
+  }
 
-/*hide all sub-menus*/
-.main-menu ul ul {
-  overflow: hidden;
-  height: 0;
-  width: 0;
-  opacity: 0;
-  transition-property: height, opacity;
-  transition-duration: .3s;
-}
+  /*sub-menus general setup*/
+  .main-menu ul ul li {
+    text-align: center;
+    font-size: 2.025rem;
+    text-transform: uppercase;
+  }
 
-/*sub-menus general setup*/
-.main-menu ul ul li {
-  text-align: center;
-  font-size: 2.025rem;
-  text-transform: uppercase;
-}
+  /*hovers ul on each li*/
+  .main-menu li:hover > ul {
+    position: absolute;
+    width: 100%;
+    height: 135px;
+    left: 0;
+    background-color: white;
+    opacity: 0.97;
+    overflow: visible;
+  }
 
-/*hovers ul on each li*/
-.main-menu li:hover > ul {
-  position: absolute;
-  width: 100%;
-  height: 135px;
-  left: 0;
-  background-color: white;
-  opacity: 0.97;
-  overflow: visible;
-}
+  /**first tier horizontal split to 3 (33%)**/
+  .main-menu ul > li > ul > li {
+    width: 33.3333%;
+  }
 
-/**first tier horizontal split to 3 (33%)**/
-.main-menu ul > li > ul > li {
-  width: 33.3333%;
-}
+  /**second tier horizontal split to 2 (50%)**/
+  .main-menu ul > li > ul > li > ul li {
+    width: 50%;
+  }
 
-/**second tier horizontal split to 2 (50%)**/
-.main-menu ul > li > ul > li > ul li {
-  width: 50%;
-}
+  .main-menu ul ul a:hover {
+    display: inline-block;
+    background-color: #F14848;
+    width: 100%;
+    height: 100%;
+    color: white;
+    box-shadow: 0 5px 15px 3px rgba(4, 4, 6, 0.2);
+  }
 
-.main-menu ul ul a:hover {
-  display: inline-block;
-  background-color: #F14848;
-  width: 100%;
-  height: 100%;
-  color: white;
-  box-shadow: 0 5px 15px 3px rgba(4, 4, 6, 0.2);
-}
-
-/**extends reach of hover to 100% <a>**/
-.main-menu ul ul a {
-  display: inline-block;
-  line-height: 135px;
-  width: 100%;
+  /**extends reach of hover to 100% <a>**/
+  .main-menu ul ul a {
+    display: inline-block;
+    line-height: 135px;
+    width: 100%;
+  }
 }
 
 /*=============== below 700px ===========*/
