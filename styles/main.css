@@ -1,4 +1,3 @@
-
 body {
   font: 100% 'source sans pro', sans-serif;
   padding-top: 66px;
@@ -629,11 +628,6 @@ h1 {
 
 /*===============site footer======================*/
 
-/*sets footer bg color*/
-
-/*.footer {*/
-/*display: block;*/
-/*}*/
 .footer-nav {
   background-color: #1E2024;
   height: 19vw;
@@ -642,31 +636,61 @@ h1 {
   text-transform: uppercase;
 }
 
+.footer-nav-elm {
+  /*position: relative;*/
+}
+
 /*sets margin to footers content*/
 .content-center {
   width: 90%;
+  height: 100%;
   margin: 0 auto;
   max-width: 1050px;
-}
-
-.content-center nav > ul {
-  display: inline-block;
-  width: 27%;
-  padding-top: 7%;
-  line-height: 20px;
   position: relative;
-
 }
 
-.content-center nav ul ul {
-  width: 40%;
-}
-
-.content-center a img {
+.nav-left {
+  display: block;
+  width: 33.3333%;
+  height: 100%;
   position: absolute;
-  left: 1020px;
-
+  top: 20%;
+  left: 5%;
 }
+
+.nav-middle {
+  display: block;
+  width: 33.3333%;
+  height: 100%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+.nav-right {
+  display: block;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  left: 32%;
+  top: 20%;
+}
+/*.content-center nav > ul {*/
+/*display: inline-block;*/
+/*width: 27%;*/
+/*padding-top: 7%;*/
+/*line-height: 20px;*/
+/*}*/
+
+/*.content-center nav ul ul {*/
+/*width: 40%;*/
+/*}*/
+
+/*.content-center a img {*/
+/*position: absolute;*/
+/*left: 1020px;*/
+
+/*}*/
 
 /*links color*/
 
