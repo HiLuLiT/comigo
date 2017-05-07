@@ -1,3 +1,5 @@
+/*=========General ===============*/
+
 body {
   font: 100% 'source sans pro', sans-serif;
   padding-top: 66px;
@@ -18,7 +20,7 @@ ul {
   margin: 0;
 }
 
-/*=========General LoVe HAte ============*/
+/*========= LoVe HAte ============*/
 
 a:link,
 a:visited {
@@ -34,15 +36,39 @@ a:active {
   outline: none;
 }
 
-/*nav setting*/
+/*nav settings*/
 /**hides checkbox**/
 input[type=checkbox] {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
+/*======================== All The Red Buttons On Page ============================*/
 
-/*===============Intro & Why comigo sections==========================*/
+.general-btn-red:link,
+.general-btn-red:visited {
+  background-color: #F14848;
+  padding: 12px 16px;
+  border-radius: 40px;
+  color: white;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-decoration: none;
+  display: inline-block;
+  transition-property: box-shadow, transform;
+  transition-duration: 200ms, 200ms;
+}
+
+.general-btn-red:hover,
+.general-btn-red:active,
+.general-btn-red:focus {
+  box-shadow: 0 5px 20px 3px rgba(4, 4, 6, 0.2);
+  transform: translateY(-7px);
+}
+
+/*===============Intro & Why Comigo sections==========================*/
 
 /*height has view-ports width as value, to keep aspect ratio (745 dvided by 1920 =0.388.
 since viewport values are in percentages, the value is 38.8v-width )*/
@@ -57,8 +83,6 @@ since viewport values are in percentages, the value is 38.8v-width )*/
 }
 
 .intro-content {
-  /*font-size: 2rem;*/
-  /*line-height: 2rem;*/
   padding: 8vw 0;
   margin: auto;
   width: 100%;
@@ -103,32 +127,9 @@ h1 {
   margin: auto;
 }
 
-/*======================== all the red buttons on page ============================*/
 
-.general-btn-red:link,
-.general-btn-red:visited {
-  background-color: #F14848;
-  padding: 12px 16px;
-  border-radius: 40px;
-  color: white;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 300;
-  text-decoration: none;
-  display: inline-block;
-  transition-property: box-shadow, transform;
-  transition-duration: 200ms, 200ms;
-}
 
-.general-btn-red:hover,
-.general-btn-red:active,
-.general-btn-red:focus {
-  box-shadow: 0 5px 20px 3px rgba(4, 4, 6, 0.2);
-  transform: translateY(-7px);
-}
-
-/*=================SERVICES section MIDDLE =======================*/
+/*================= Services Section =======================*/
 
 .services-section {
   background-color: rgba(21, 21, 21, 0.9);
@@ -252,7 +253,7 @@ h1 {
   z-index: -3;
 }
 
-/*================== enhancement & deploy section =====================*/
+/*================== Enhancement & Deploy Section =====================*/
 
 .enhance-content {
   background-image: url(../Media/other/ic_EI_cloud_2_home_page.png), url(../Media/other/home-tv-service-bg1.png);
@@ -353,7 +354,7 @@ h1 {
   transform: translateY(-7px);
 }
 
-/*==================your-content section======================*/
+/*================== Your-Content Section ======================*/
 
 .experience {
   clear: both;
@@ -661,9 +662,6 @@ h1 {
   color: white;
   font-weight: 100;
 }
-
-/*הסדר הרצוי בשורטהאנד*/
-/*background: coral url() no-repeat 50px 50px;*/
 
 .blog1 {
   background-size: cover;
